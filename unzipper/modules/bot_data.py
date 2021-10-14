@@ -52,7 +52,7 @@ class Buttons:
 
 class Messages:
     START_TEXT = """
-Bismillahirrahmanirrahim selamat datang **{}**, saya adalah **Unzip Bot
+Bismillahirrahmanirrahim selamat datang Ikhwah Fillah**{}**, saya adalah **Unzip Bot
 
 `Saya bisa mengekstrak file zip, rar, tar etc.`
 
@@ -77,9 +77,10 @@ Bismillahirrahmanirrahim selamat datang **{}**, saya adalah **Unzip Bot
     ABOUT_TXT = """
 **About AMC UNZIP Bot,**
 
-✘ **Dibuat oleh:** [Annajiyah Media Center](https://t.me/joinchat/JBcrDwIEMzoxODdh)
+- **Bot untuk mengekstrak file seperti Zip, Rar Dll
+- **Dibuat oleh:** [Annajiyah Media Center](https://t.me/joinchat/JBcrDwIEMzoxODdh)
 
-**Jangan lupa untuke mendoakan kemenangan Islam dan kaum muslimin, khususnya mujahidin #Daulah_Islamiyah**
+**Jangan lupa untuk mendoakan kemenangan Islam dan kaum muslimin, khususnya mujahidin #Daulah_Islamiyah**
     """
 
     LOG_TXT = """
