@@ -79,10 +79,6 @@ Bismillahirrahmanirrahim selamat datang **{}**, saya adalah **Unzip Bot
 
 ✘ **Dibuat oleh:** [Annajiyah Media Center](https://t.me/joinchat/JBcrDwIEMzoxODdh)
 
-
-
-
-
 **Jangan lupa untuke mendoakan kemenangan Islam dan kaum muslimin, khususnya mujahidin #Daulah_Islamiyah**
     """
 
