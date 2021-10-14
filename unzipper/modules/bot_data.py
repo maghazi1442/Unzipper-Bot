@@ -8,8 +8,8 @@ class Buttons:
     START_BUTTON=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Help 📜", callback_data="helpcallback"),
-                InlineKeyboardButton("About ⁉️", callback_data="aboutcallback")
+                InlineKeyboardButton("Help ", callback_data="helpcallback"),
+                InlineKeyboardButton("About ", callback_data="aboutcallback")
             ]
         ]
     )
@@ -33,10 +33,10 @@ class Buttons:
     CLN_BTNS=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Clean My Files 😇", callback_data="cancel_dis")
+                InlineKeyboardButton("Clean My Files ", callback_data="cancel_dis")
             ],
             [
-                InlineKeyboardButton("TF! Nooo 😳", callback_data="nobully")
+                InlineKeyboardButton("TF! Nooo", callback_data="nobully")
             ]
         ]
     )
@@ -52,38 +52,38 @@ class Buttons:
 
 class Messages:
     START_TEXT = """
-Hi **{}**, I'm **Nexa Unzipper Bot** 😇!
+Bismillahirrahmanirrahim selamat datang **{}**, saya adalah **Unzip Bot
 
-`I can extract archives like zip, rar, tar etc.`
+`Saya bisa mengekstrak file zip, rar, tar etc.`
 
-**Made with ❤️ by @NexaBotsUpdates**
+**Bot ini dibuat oleh saudara kalian di #Annajiyah_Media_Center**
     """
 
     HELP_TXT = """
-**How To Extract? 🤔**
+**Bagaimana cara mengekstrak file?**
 
-`1. Send the file or link that you want to extract.`
-`2. Click on extract button (If you sent a link use "Url Extract" button. If it's a file just use "File Extract" button).`
+`1. kirimkan saya file atau link, insya Allah saya akan mengekstraknya.`
+`2. Klik tombol ekstrak (Jika Anda mengirim tautan gunakan tombol "Ekstrak Url". Jika itu file, gunakan tombol "Ekstrak File").`
 
 
 **Note:**
-    **1.** `If your archive is password protected select` **(Password) Extract 📂** `mode. Bot isn't a GOD to know your file's password so If this happens just send that password!`
+    **1.** `Jika arsip Anda dilindungi kata sandi,` **(Password) Extract 📂** `mode. Ketikkan saja kata sandinya!`
     
-    **2.** `Please don't send corrupted files! If you sent a one by a mistake just send` **/clean** `command!`
+    **2.** `Jangan mengirimkan file yamg telah rusak, Jika Anda mengirim satu karena kesalahan, cukup kirim perintah`**/clean** `command!`
     
-    **3.** `If your archive have 95 or more files in it then bot can't show all of extracted files to select from. So in that case if you can't see your file in the buttons just click on` "Upload All ♻️" `button. It'll send all extracted files to you!`
+    **3.** `Jika arsip Anda memiliki 95 atau lebih file di dalamnya, bot tidak dapat menampilkan semua file yang diekstrak untuk dipilih. Jadi jika Anda tidak dapat melihat file Anda di tombol, cukup klik tombol ` "Upload All ♻️" `.Ini akan mengirimkan semua file yang di ekstrak kepada anda!`
     """
 
     ABOUT_TXT = """
-**About Nexa Unzipper Bot,**
+**About AMC UNZIP Bot,**
 
-✘ **Language:** [Python](https://www.python.org/)
-✘ **Framework:** [Pyrogram](https://docs.pyrogram.org/)
-✘ **Source Code:** [Itz-fork/Unzipper-Bot](https://github.com/Itz-fork/Unzipper-Bot)
-✘ **Developer:** [Itz-fork](https://github.com/Itz-fork)
+✘ **Dibuat oleh:** [Annajiyah Media Center](https://t.me/joinchat/JBcrDwIEMzoxODdh)
 
 
-**Made with ❤️ by @NexaBotsUpdates**
+
+
+
+**Jangan lupa untuke mendoakan kemenangan Islam dan kaum muslimin, khususnya mujahidin #Daulah_Islamiyah**
     """
 
     LOG_TXT = """
@@ -95,29 +95,29 @@ Hi **{}**, I'm **Nexa Unzipper Bot** 😇!
     """
 
     AFTER_OK_DL_TXT = """
-**Successfully Downloaded**
+**Berhasil Mendownload**
 
 **Download time:** `{}`
-**Status:** `Trying to extract the archive`
+**Status:** `Sedang mencoba mengekstrak arsip`
     """
 
     EXT_OK_TXT = """
-**Extraction Successfull!**
+**Berhasil mengekstrak**
 
 **Extraction time:** `{}`
-**Status:** `Trying to upload`
+**Status:** `Mencoba untuk mengupload`
     """
 
     EXT_FAILED_TXT = """
-**Extraction Failed 😕!**
+**Gagal Mengekstrak!**
 
-**What to do?**
+**Apa yang harus dilakukan?**
 
- - `Please make sure archive isn't corrupted`
- - `Please make sure that you selected the right mode!`
- - `May be Your archive format isn't supported 😔`
+ - `Pastikan arsip tidak rusak`
+ - `Pastikan Anda memilih mode yang tepat!`
+ - `Mungkin format file anda tidak mendukung`
 
-**Please report this at @Nexa_bots if you think this is a serious error**
+**Laporakan ke @contact_AnnajiyahMediaCenter Jika bot ini memiliki masalah**
     """
 
     ERROR_TXT = """
@@ -126,7 +126,7 @@ Hi **{}**, I'm **Nexa Unzipper Bot** 😇!
 **ERROR:** {}
 
 
-**Please report this at @Nexa_bots if you think this is a serious error**
+**Please report this at  if you think this is a serious error**
     """
 
     CANCELLED_TXT = """
