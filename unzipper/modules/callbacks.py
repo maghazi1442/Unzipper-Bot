@@ -55,7 +55,7 @@ async def unzipper_cb(unzip_bot: Client, query: CallbackQuery):
                     unzip_resp = await ses.get(url)
                     # Checks if file is an archive using content-type header
                     if "application/" not in unzip_resp.headers.get('content-type'):
-                        return await query.message.edit("`That's not an archive 😒!`")
+                        return await query.message.edit("`Itu bukan Arsip!`")
                     if unzip_resp.status == 200:
                         # Makes download dir
                         os.makedirs(download_path)
@@ -133,7 +133,7 @@ async def unzipper_cb(unzip_bot: Client, query: CallbackQuery):
         if not paths:
             if os.path.isdir(f"{Config.DOWNLOAD_LOCATION}/{spl_data[1]}"):
                 shutil.rmtree(f"{Config.DOWNLOAD_LOCATION}/{spl_data[1]}")
-            return await query.message.edit("`Sayasudah mengirimimu file-file itu, Jangan minta saya kirim ulang`")
+            return await query.message.edit("`Saya sudah mengirimimu file-file itu, Jangan minta saya kirim ulang`")
         
         await query.answer("saya mengirimi Anda file, tunggu dan sabar")
         await send_file(unzip_bot=unzip_bot,
