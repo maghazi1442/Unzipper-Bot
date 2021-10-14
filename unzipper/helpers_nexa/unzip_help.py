@@ -34,7 +34,7 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
             estimated_total_time if estimated_total_time != '' else "0 s"
         )
         try:
-            await message.edit(text="{}\n {} \n\n**Powered by @NexaBotsUpdates**".format(ud_type,tmp))
+            await message.edit(text="{}\n {} \n\n**Powered by #Annajiyah_Media_Center**".format(ud_type,tmp))
         except:
             pass
 
@@ -69,15 +69,15 @@ def check_logs():
         if Config.LOGS_CHANNEL:
             c_info = client.get_chat(chat_id=Config.LOGS_CHANNEL)
             if c_info.type != "channel":
-                print("TF? Chat is not a channel")
+                print("Chat is not a channel")
                 return
             elif c_info.username is not None:
-                print("TF? Chat is not private")
+                print("Chat is not private")
                 return
             else:
                 client.send_message(chat_id=Config.LOGS_CHANNEL, text="`Unzipper-Bot has Successfully Started!` \n\n**Powered by @NexaBotsUpdates**")
         else:
-            print("No Log Channel ID is Given! Imma leaving Now!")
+            print("Tidak ada Log Channel ID yang diberikan! Imma berangkat sekarang!")
             exit()
     except:
-        print("Error Happend while checking Log Channel! Make sure you're not dumb enough to provide a wrong Log Channel ID!")
+        print("Kesalahan saat memeriksa saluran Log! Pastikan Anda tidak memberikan ID saluran Log yang salah!")
