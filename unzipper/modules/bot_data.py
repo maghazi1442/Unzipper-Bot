@@ -36,7 +36,7 @@ class Buttons:
                 InlineKeyboardButton("Clean My Files ", callback_data="cancel_dis")
             ],
             [
-                InlineKeyboardButton("TF! Nooo", callback_data="nobully")
+                InlineKeyboardButton("Daulah Islamiyah", callback_data="Baaqiyah..")
             ]
         ]
     )
@@ -121,29 +121,29 @@ Bismillahirrahmanirrahim selamat datang **{}**, saya adalah **Unzip Bot
     """
 
     ERROR_TXT = """
-**Error Happend 😕!**
+**Error!**
 
 **ERROR:** {}
 
 
-**Please report this at  if you think this is a serious error**
+**Harap laporkan kepada admin jika bot error**
     """
 
     CANCELLED_TXT = """
 **{} ✅!**
 
-`Now all of your files have been deleted from my server 😏!`
+`Sekarang semua file anda telah dihapus dari server kami!`
     """
 
     CLEAN_TXT = """
-**Are sure want to delete your files from my server 🤔?**
+**Apakah anda ingin menghapus file dari server kami??**
 
-**Note:** `This action cannot be undone!`
+**Note:** `Tindakan ini tidak bisa dibatalkan..`
     """
 
 
 # List of error messages from p7zip
 ERROR_MSGS = [
     "Error",
-    "Can't open as archive"
+    "Tidak bisa membuka file sebagai arsip"
     ]
