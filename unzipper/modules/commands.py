@@ -48,17 +48,17 @@ async def clean_ma_files(client: Client, message: Message):
 
 @Client.on_message(filters.incoming & filters.private & filters.regex(https_url_regex) | filters.document)
 async def extract_dis_archive(client: Client, message: Message):
-    unzip_msg = await message.reply("`Processing ⚙️...`", reply_to_message_id=message.message_id)
+    unzip_msg = await message.reply("`Sabar menunggu, sedang proses...`", reply_to_message_id=message.message_id)
     user_id = message.from_user.id
     download_path = f"{Config.DOWNLOAD_LOCATION}/{user_id}"
     if os.path.isdir(download_path):
-        return await unzip_msg.edit("`Already one process is going on, Don't spam you idiot 😑!` \n\nWanna Clear You Files from my server? Then just send **/clean** command!")
+        return await unzip_msg.edit("`proses berlangsung, Jangan kirim apapun!` \n\nIngin menghapus File dari server saya? Lalu kirim saja**/clean** command!")
     await unzip_msg.edit("**What do you want?**", reply_markup=Buttons.CHOOSE_E_BTN)
 
 # Database Commands
 @Client.on_message(filters.private & filters.command("stats") & filters.user(Config.BOT_OWNER))
 async def send_stats(client: Client, message: Message):
-    stats_msg = await message.reply("`Processing ⚙️...`")
+    stats_msg = await message.reply("`Sedang Proses...`")
     total, used, free = shutil.disk_usage(".")
     total = humanbytes(total)
     used = humanbytes(used)
